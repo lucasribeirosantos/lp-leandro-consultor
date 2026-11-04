@@ -1,0 +1,17 @@
+# Troque SEU-DOMINIO.com.br pelo domínio final
+User-agent: *
+Allow: /
+
+# Assistentes de IA (AEO): liberados para citar o conteúdo
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://SEU-DOMINIO.com.br/sitemap.xml
