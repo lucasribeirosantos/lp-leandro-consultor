@@ -616,6 +616,12 @@ section{position:relative}
 .qa-body p b{color:var(--ink)}
 @media (max-width:520px){.qa-body p{padding-right:0}}
 
+/* link to the guide */
+.guide-card{display:block;margin-top:28px;padding:22px 24px;border-radius:20px;background:var(--ink);color:#fff;text-decoration:none;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
+.guide-card:hover{transform:translateY(-4px);box-shadow:0 30px 50px -30px rgba(0,0,0,.5)}
+.guide-card .gc-k{display:block;font-family:var(--display);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#ff6b62}
+.guide-card b{display:block;font-family:var(--display);font-size:20px;line-height:1.2;margin:8px 0 6px}
+.guide-card .gc-l{display:block;font-size:14px;color:#bdbbb7}
 /* ademicon */
 .ademicon{padding:clamp(100px,12vw,180px) 0;background:var(--ink);overflow:hidden}
 .ademicon-bg{position:absolute;right:-12vw;top:50%;width:min(70vw,900px);transform:translateY(-50%);opacity:.05;pointer-events:none}
@@ -777,6 +783,7 @@ footer{background:var(--ink);padding:70px 0 34px;color:#a9a7a3;font-size:14px}
       <a href="#metodo">Método</a>
       <a href="#duvidas">Dúvidas</a>
       <a href="#ademicon">Ademicon</a>
+      <a href="guia/">Guia</a>
       <a href="#depoimentos">Depoimentos</a>
     </nav>
     <a class="btn btn-red js-wa" href="#" target="_blank" rel="noopener">
@@ -1022,6 +1029,11 @@ footer{background:var(--ink);padding:70px 0 34px;color:#a9a7a3;font-size:14px}
         Fazer a minha pergunta
         <span class="arr"><svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
+      <a class="guide-card rv" href="guia/">
+        <span class="gc-k">Guia completo · 14 capítulos</span>
+        <b>Quer ir mais fundo? Leia o guia do consórcio.</b>
+        <span class="gc-l">Grupo, parcela, contemplação, tipos de lance, reajustes, uso do crédito e mais →</span>
+      </a>
     </div>
     <div class="qa-list">
       <div class="qa rv"><button aria-expanded="false">O que é consórcio, afinal?<span class="pm"></span></button><div class="qa-body"><div><p id="o-que-e-consorcio">Consórcio é um <b>grupo de pessoas que contribui todo mês para um fundo comum</b>. A cada mês, participantes são contemplados por sorteio ou lance e recebem uma carta de crédito para comprar imóvel, veículo ou serviço. Não há juros de financiamento: há taxa de administração e, conforme o plano, fundo de reserva, seguros e outros encargos previstos em contrato. A modalidade é regulada pelo Banco Central (Lei 11.795/2008).</p></div></div></div>
@@ -1183,7 +1195,7 @@ footer{background:var(--ink);padding:70px 0 34px;color:#a9a7a3;font-size:14px}
       </div>
       <div>
         <h2 class="foot-h">Navegue</h2>
-        <ul><li><a href="#por-que-consorcio">Por que consórcio</a></li><li><a href="#metodo">Método</a></li><li><a href="#duvidas">Dúvidas</a></li><li><a href="#ademicon">Ademicon</a></li></ul>
+        <ul><li><a href="#por-que-consorcio">Por que consórcio</a></li><li><a href="#metodo">Método</a></li><li><a href="#duvidas">Dúvidas</a></li><li><a href="#ademicon">Ademicon</a></li><li><a href="guia/">Guia completo do consórcio</a></li></ul>
       </div>
       <div>
         <h2 class="foot-h">Contato</h2>
