@@ -1466,9 +1466,14 @@ const TESTIMONIALS = [];
   });
   hsCards.forEach((card, i) => {
     const inner = card.querySelector(".hs-inner"), mark = card.querySelector(".hs-mark");
+    const qFace = card.querySelector(".hs-q"), aFace = card.querySelector(".hs-a");
+    gsap.set(aFace, {visibility: "hidden"});
     hs.to({}, {duration: .3})                                                       // read the question
       .to(inner, {rotateY: 180, duration: 1}, ">")                                   // flip in place
-      .to(mark, {yPercent: 60, rotate: 25, opacity: 0, duration: .8, ease: "power2.in"}, "<")
+      // iOS Safari ignores backface-visibility on layered children: swap faces at the edge-on midpoint
+      .set(qFace, {visibility: "hidden"}, "<.5")
+      .set(aFace, {visibility: "visible"}, "<")
+      .to(mark, {yPercent: 60, rotate: 25, opacity: 0, duration: .8, ease: "power2.in"}, "<-.5")
       .to(card, {scale: 1.04, duration: .5, yoyo: true, repeat: 1, ease: "sine.inOut"}, "<")
       .to({}, {duration: .3});                                                       // read the answer
     if (i < N - 1){
